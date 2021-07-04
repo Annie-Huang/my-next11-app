@@ -4,6 +4,12 @@
 
 C:\Temp>npx create-next-app my-next11-app --typescript
 
+C:\Temp\my-next11-app>npm run lint
+        To use ESLint, additional required package(s) must be installed.
 
+        Please install eslint and eslint-config-next by running:
 
+                npm install --save-dev eslint eslint-config-next
+
+C:\Temp\my-next11-app>npm install --save-dev eslint eslint-config-next
 
