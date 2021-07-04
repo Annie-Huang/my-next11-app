@@ -1,4 +1,4 @@
-
+https://nextjs.org/docs/basic-features/eslint
 
 ========================================================================
 
@@ -24,3 +24,40 @@ C:\Temp\my-next11-app>npm install --save-dev eslint eslint-config-next
 
         Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
 
+-------------
+
+Linting During Builds
+Once ESLint has been set up, it will automatically run during every build (next build). Errors will fail the build, while warnings will not.
+
+If you do not want ESLint to run as a build step, refer to the documentation for Ignoring ESLint:
+
+
+============================================================================================
+
+ESLint Plugin
+Next.js provides an ESLint plugin, eslint-plugin-next, making it easier to catch common issues and problems in a Next.js application. The full set of rules is as follows:
+
+Rule	Description
+✔️	next/google-font-display	Enforce optional or swap font-display behavior with Google Fonts
+✔️	next/google-font-preconnect	Enforce preconnect usage with Google Fonts
+✔️	next/link-passhref	Enforce passHref prop usage with custom Link components
+✔️	next/no-css-tags	Prevent manual stylesheet tags
+✔️	next/no-document-import-in-page	Disallow importing next/document outside of pages/document.js
+✔️	next/no-head-import-in-document	Disallow importing next/head in pages/document.js
+✔️	next/no-html-link-for-pages	Prohibit HTML anchor links to pages without a Link component
+✔️	next/no-img-element	Prohibit usage of HTML <img> element
+✔️	next/no-page-custom-font	Prevent page-only custom fonts
+✔️	next/no-sync-scripts	Forbid synchronous scripts
+✔️	next/no-title-in-document-head	Disallow using <title> with Head from next/document
+✔️	next/no-unwanted-polyfillio	Prevent duplicate polyfills from Polyfill.io
+
+----------
+
+{
+  "extends": "next"
+}
+        This configuration extends recommended rule sets from various ESLint plugins:
+
+        eslint-plugin-react
+        eslint-plugin-react-hooks
+        eslint-plugin-next
